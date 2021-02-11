@@ -20,21 +20,21 @@ function Square({ value, onClick }) {
 //   );
 // }
 
-// function Game() {
-//   const [ squares, setSquares ] = useState(Array(9).fill(null));
-//   const [ isXNext, setIsXNext ] = useState(true);
-//   const nextSymbol = isXNext ? "X" : "O";
-//   const winner = calculateWinner(squares);
+function Game() {
+  const [ squares, setSquares ] = useState(Array(9).fill(null));
+  const [ isXNext, setIsXNext ] = useState(true);
+  const nextSymbol = isXNext ? "X" : "O";
+  const winner = calculateWinner(squares);
 
-//   function getStatus() {
-//     if (winner) {
-//       return "Winner: " + winner;
-//     } else if (isBoardFull(squares)) {
-//       // return "Draw!";
-//     } else {
-//       return "Next player: " + nextSymbol;
-//     }
-//   }
+  function getStatus() {
+    if (winner) {
+      return "Winner: " + winner;
+    } else if (isBoardFull(squares)) {
+      // return "Draw!";
+    } else {
+      return "Next player: " + nextSymbol;
+    }
+  }
 
 //   function renderSquare(i) {
 //     return (
