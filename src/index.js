@@ -36,34 +36,34 @@ function Game() {
     }
   }
 
-  function renderSquare(i) {
-    return (
-      <Square
-        value={squares[i]}
-        onClick={() => {
-          if (squares[i] != null || winner != null) {
-            return;
-          }
-          const nextSquares = squares.slice();
-          nextSquares[i] = nextSymbol;
-          setSquares(nextSquares);
+  // function renderSquare(i) {
+  //   return (
+  //     <Square
+  //       value={squares[i]}
+  //       onClick={() => {
+  //         if (squares[i] != null || winner != null) {
+  //           return;
+  //         }
+  //         const nextSquares = squares.slice();
+  //         nextSquares[i] = nextSymbol;
+  //         setSquares(nextSquares);
 
-          setIsXNext(!isXNext); // toggle turns
-        }}
-      />
-    );
-  }
+  //         setIsXNext(!isXNext); // toggle turns
+  //       }}
+  //     />
+  //   );
+  // }
 
-  function renderRestartButton() {
-    return (
-      <Restart
-        onClick={() => {
-          setSquares(Array(9).fill(null));
-          setIsXNext(true);
-        }}
-      />
-    );
-  }
+  // function renderRestartButton() {
+  //   return (
+  //     <Restart
+  //       onClick={() => {
+  //         setSquares(Array(9).fill(null));
+  //         setIsXNext(true);
+  //       }}
+  //     />
+  //   );
+  // }
 
 //   return (
 //     <div className="container">
@@ -92,7 +92,7 @@ function Game() {
 //   );
 // }
 
-// ReactDOM.render(<Game />, document.getElementById("root"));
+ReactDOM.render(<Game />, document.getElementById("root"));
 
 // function calculateWinner(squares) {
 //   console.log(squares)
