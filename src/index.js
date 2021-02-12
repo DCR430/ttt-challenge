@@ -11,14 +11,14 @@ function Square({ value, onClick }) {
   );
 }
 
-// function Restart({ onClick }) {
+function Restart({ onClick }) {
 
-//   return (
-//     <button className="restart" onClick={onClick}>
-//       Play again
-//     </button>
-//   );
-// }
+  return (
+    <button className="restart" onClick={onClick}>
+      Play again
+    </button>
+  );
+}
 
 function Game() {
   const [ squares, setSquares ] = useState(Array(9).fill(null));
