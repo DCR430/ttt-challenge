@@ -32,7 +32,7 @@ function Game() {
     } else if (isBoardFull(squares)) {
       return "Draw !";
     } else {
-      return "Next player goes: " + nextSymbol;
+      return "Next player to play: " + nextSymbol;
     }
   }
 
