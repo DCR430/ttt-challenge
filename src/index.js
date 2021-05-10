@@ -116,11 +116,11 @@ function calculateWinner(squares) {
   return null;
 }
 
-function isBoardFull(squares) {
-  for (let i = 0; i < squares.length; i++) {
-    if (squares[i] == null) {
-      return false;
-    }
-  }
-  return true;
-}
+// function isBoardFull(squares) {
+//   for (let i = 0; i < squares.length; i++) {
+//     if (squares[i] == null) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
