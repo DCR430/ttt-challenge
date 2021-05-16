@@ -23,7 +23,7 @@ function Restart({ onClick }) {
 function Game() {
   const [ squares, setSquares ] = useState(Array(9).fill(null));
   const [ isXNext, setIsXNext ] = useState(true);
-  const nextSymbol = isXNext ? "blue" : "green";
+  const nextSymbol = isXNext ? "X" : "O";
   const winner = calculateWinner(squares);
 
   function getStatus() {
