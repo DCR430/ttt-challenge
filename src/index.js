@@ -85,7 +85,7 @@ function Game() {
             {renderSquare(8)}
           </div>
         </div>
-        <div className="game-info">{getStatus()}</div>
+        {/* <div className="game-info">{getStatus()}</div> */}
         <div className="restart-button">{renderRestartButton()}</div>
       </div>
     </div>
