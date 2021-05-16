@@ -30,7 +30,7 @@ function Game() {
     if (winner) {
       return "You Won!! : " + winner;
     } else if (isBoardFull(squares)) {
-      return "Draw !";
+      return " ITS A Draw !";
     } else {
       return "Next player: " + nextSymbol;
     }
