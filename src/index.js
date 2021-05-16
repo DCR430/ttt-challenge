@@ -28,7 +28,7 @@ function Game() {
 
   function getStatus() {
     if (winner) {
-      return "Winner : " + winner;
+      return "You Won!! : " + winner;
     } else if (isBoardFull(squares)) {
       return "Draw !";
     } else {
